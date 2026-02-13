@@ -1,0 +1,105 @@
+{
+  "names": {
+    "sender": "Sree",
+    "receiver": "Shinu"
+  },
+  "content": {
+    "title": "Will you be my Valentine?",
+    "subtitle": "You make my life beautiful ❤️",
+    "yesButtonText": "YES! 💕",
+    "noButtonText": "NO 😢",
+    "successMessage": "You just made me the happiest person alive! 🎉"
+  },
+  "questions": [
+    {
+      "id": "firstDate",
+      "title": "When was our first date? 💕",
+      "options": [
+        { "text": "April 20", "correct": false },
+        { "text": "March 29", "correct": true },
+        { "text": "March 28", "correct": false }
+      ],
+      "wrongMessage": "I will kill you, you are not my valentine! 😡"
+    },
+    {
+      "id": "bestMemory",
+      "title": "What was our best memory together? 🌟",
+      "options": [
+        { "text": "April 11 - Our first night", "correct": true },
+        { "text": "Random dinner date", "correct": false },
+        { "text": "Shopping together", "correct": false }
+      ],
+      "wrongMessage": "I will kill you, you are not my valentine! 😡"
+    },
+    {
+      "id": "adventure",
+      "title": "Our most memorable adventure was at? 🏕️",
+      "options": [
+        { "text": "ABC Camp", "correct": true },
+        { "text": "Beach resort", "correct": false },
+        { "text": "Mountain hiking", "correct": false }
+      ],
+      "wrongMessage": "I will kill you, you are not my valentine! 😡"
+    },
+    {
+      "id": "playlist",
+      "title": "Who created our special playlist? 🎵",
+      "options": [
+        { "text": "You did, my love", "correct": true },
+        { "text": "I created it", "correct": false },
+        { "text": "We made it together", "correct": false }
+      ],
+      "wrongMessage": "I will kill you, you are not my valentine! 😡"
+    }
+  ],
+  "couplePhotos": [
+    {
+      "image": "/src/assets/couple_photo/photo1.jpg",
+      "caption": "Our first date ❤️"
+    },
+    {
+      "image": "/src/assets/couple_photo/photo2.jpg",
+      "caption": "Best memories together 💑"
+    },
+    {
+      "image": "/src/assets/couple_photo/photo3.jpg",
+      "caption": "Adventures with you 🌟"
+    }
+  ],
+  "songs": [
+    {
+      "title": "Perfect",
+      "duration": "4:20",
+      "album": "Divide",
+      "artist": "Ed Sheeran",
+      "cover": "/src/assets/album-covers/perfect.jpg",
+      "audio": "/src/assets/songs/perfect.mp3"
+    },
+    {
+      "title": "Thinking Out Loud",
+      "duration": "4:41",
+      "album": "x",
+      "artist": "Ed Sheeran",
+      "cover": "/src/assets/album-covers/thinking-out-loud.jpg",
+      "audio": "/src/assets/songs/thinking-out-loud.mp3"
+    },
+    {
+      "title": "All of Me",
+      "duration": "4:29",
+      "album": "Love in the Future",
+      "artist": "John Legend",
+      "cover": "/src/assets/album-covers/all-of-me.jpg",
+      "audio": "/src/assets/songs/all-of-me.mp3"
+    }
+  ],
+  "gift": {
+    "image": "/src/assets/gift/gift-box.png",
+    "message": "A special gift just for you! 🎁"
+  },
+  "theme": {
+    "primaryColor": "#ff69b4",
+    "secondaryColor": "#ff1493",
+    "backgroundColor": "#667eea",
+    "fontFamily": "Arial, sans-serif"
+  }
+}

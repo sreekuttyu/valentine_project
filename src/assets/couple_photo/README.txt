@@ -1,0 +1,1 @@
+This file needs to be replaced with the actual couple photo from the attachment showing Sree and Shinu together.

@@ -1,0 +1,346 @@
+.success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.final-message {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 880px;
+}
+
+/* Couple photo styles */
+.couple-photo {
+  position: relative;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  animation: photoAppear 1.6s ease-out 0.35s both;
+}
+
+.couple-photo img {
+  width: 320px;
+  height: 320px;
+  max-width: 90vw;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.35);
+  animation: photoGlow 3s ease-in-out infinite;
+}
+
+.photo-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.photo-heart {
+  position: absolute;
+  font-size: 2rem;
+  animation: heartFloat 4s ease-in-out infinite;
+}
+
+.photo-heart:nth-child(1) {
+  top: -10px;
+  left: -10px;
+  animation-delay: 0s;
+}
+
+.photo-heart:nth-child(2) {
+  top: -10px;
+  right: -10px;
+  animation-delay: 1s;
+}
+
+.photo-heart:nth-child(3) {
+  bottom: -10px;
+  left: -10px;
+  animation-delay: 2s;
+}
+
+.photo-heart:nth-child(4) {
+  bottom: -10px;
+  right: -10px;
+  animation-delay: 3s;
+}
+
+.main-message h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-message h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Animated hearts */
+.animated-hearts {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 100px;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.heart-1 {
+  left: 10%;
+  animation: floatHeart 3s infinite, rotate 4s infinite;
+  animation-delay: 0s;
+}
+
+.heart-2 {
+  left: 30%;
+  animation: floatHeart 3s infinite reverse, rotate 3s infinite reverse;
+  animation-delay: 0.5s;
+}
+
+.heart-3 {
+  left: 50%;
+  animation: floatHeart 3s infinite, rotate 5s infinite;
+  animation-delay: 1s;
+}
+
+.heart-4 {
+  left: 70%;
+  animation: floatHeart 3s infinite reverse, rotate 3.5s infinite reverse;
+  animation-delay: 1.5s;
+}
+
+.heart-5 {
+  left: 90%;
+  animation: floatHeart 3s infinite, rotate 4.5s infinite;
+  animation-delay: 2s;
+}
+
+/* Sparkles animation */
+.sparkles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: sparkleFloat 4s ease-in-out infinite;
+}
+
+.sparkle-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.sparkle-2 {
+  top: 30%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.sparkle-3 {
+  top: 60%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.sparkle-4 {
+  top: 70%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+.sparkle-5 {
+  top: 10%;
+  left: 60%;
+  animation-delay: 0.5s;
+}
+
+.sparkle-6 {
+  top: 80%;
+  left: 70%;
+  animation-delay: 1.5s;
+}
+
+/* Keyframe animations */
+@keyframes photoAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-6deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes photoGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 105, 180, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 42px rgba(255, 105, 180, 0.85), 0 0 84px rgba(255, 105, 180, 0.5);
+  }
+}
+
+@keyframes heartFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.5), 0 0 30px rgba(255, 105, 180, 0.3);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.5);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes floatHeart {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(-10px) scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px) scale(0.8);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-5px) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .couple-photo img {
+    width: 280px;
+    height: 280px;
+  }
+  .main-message h1 { font-size: 3rem; }
+  .main-message h2 { font-size: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .final-message { gap: 1rem; }
+  .couple-photo img {
+    width: 220px;
+    height: 220px;
+    border: 6px solid rgba(255, 255, 255, 0.95);
+  }
+  .main-message h1 { font-size: 2.4rem; }
+  .main-message h2 { font-size: 1.6rem; }
+  .animated-hearts { width: 260px; }
+  .heart { font-size: 1.4rem; }
+  .sparkle { font-size: 0.95rem; }
+  .photo-heart { font-size: 1.2rem; }
+}
+
+/* Ensure the main message has a controlled width for better alignment */
+.main-message {
+  width: 100%;
+  max-width: 680px;
+}
+
+.main-message h1 {
+  font-size: 3.6rem;
+  margin: 0;
+  line-height: 1.05;
+  color: var(--primary-color);
+  text-shadow: 0 0 20px rgba(255, 105, 180, 0.45);
+}
+
+.main-message h2 {
+  font-size: 2.4rem;
+  margin: 0.25rem 0 0 0;
+  color: #ffffff;
+}
